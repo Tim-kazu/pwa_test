@@ -5,10 +5,23 @@ img {
   width: 95%;
   margin: 0 auto;
   @media screen and (min-width: 678px){
-    max-width: 1200px;
+    max-width: 960px;
   }
 }
 
 h1 {
   text-align: center;
+}
+
+h2 {
+  border-bottom: double 5px #5a0fc8;
+}
+
+.content {
+  padding: 0 5%;
+}
+
+.section_link {
+  color: #5a0fc8;
+  text-decoration: underline;
 }
