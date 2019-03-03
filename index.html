@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <link rel="stylesheet" href="style.min.css">
@@ -11,8 +12,44 @@
 </head>
 <body>
   <div class="wraper">
-    <h1>PWAサンプルサイト</h1>
-    <img src="/pwa_test/img/pwa.png">
+    <h1><img src="/pwa_test/img/pwa.png" alt="PWA"></h1>
+    <div class="content">
+      <section>
+        <h2>PWAのメリット</h2>
+        <div class="section_box">
+          <ul class="section_list">
+            <li class="section_list-item">オフラインで動く</li>
+            <li class="section_list-item">読み込みが速い</li>
+            <li class="section_list-item">ネイティブアプリのようなUI</li>
+            <li class="section_list-item">GPSを使った現在地取得と利用</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>対応状況</h2>
+        <div class="section_box">
+          <p class="section_text">現状ブラウザ対応はChromeでサポートが充実しているが、その他では部分的なサポートまでであったりする。。。</p>
+          <a class="section_link" href="https://caniuse.com/#search=PWA">対応状況 "Can I use?""</a>
+        </div>
+      </section>
+      <section>
+        <h2>導入事例</h2>
+        <div class="section_box">
+          <p class="section_text">日本での成功事例として良く挙げられているのが不動産情報サイトを運営する<a href="https://developers.google.com/web/showcase/2016/pdfs/suumo.pdf">SUUMO</a>での事例。読み込み速度を75%減少することに成功し、プッシュ通知の開封率も31%と好成績を叩き出しています。</p>
+          <ul class="section_list">
+            <li class="section_list-item"><a class="section_link" href="https://suumo.jp/sp/">SUUMO</a></li>
+            <li class="section_list-item"><a class="section_link" href="https://retty.news/">Retty グルメニュース</a></li>
+            <li class="section_list-item"><a class="section_link" href="https://www.nikkei.com/">日本経済新聞</a></li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>まとめ</h2>
+        <div class="section_box">
+          <p class="section_text">PWAは通信環境が良くないケース、特に外出時のアクセスが想定される場合に有効ではないかと考えられる。ただし、大規模開発でPWAを組み込むには工数がかかる為、ウォーターフォール式に開発するのには不向きではないかと思われる。</p>
+        </div>
+      </section>
+    </div>
   </div>
   
   <script>
