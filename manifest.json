@@ -4,7 +4,7 @@
   "start_url": "https://tim-kazu.github.io/pwa_test/",
   "display": "standalone",
   "icons": [{
-        "src": "/img/icon.png",
+        "src": "/pwa_test/img/pwa.png",
         "type": "image/png",
         "sizes": "144x144"
     }],

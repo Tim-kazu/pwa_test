@@ -3,7 +3,7 @@ var urlsToCache = [
   '/',
   'manifest.json',
   'style.min.css',
-  '/img/pwa.png'
+  '/pwa_test/img/pwa.png'
 ];
 //Install
 self.addEventListener('install', function(event) {
