@@ -103,6 +103,14 @@ h2 {
 }
 .section_list-item {
   margin-bottom: 1rem;
+  font-size: 1.8rem;
+  @media screen and (min-width: 678px){
+    font-size: 1.6rem;
+  }
+}
+.section_text {
+  font-size: 1.5rem;
+  line-height: 1.6;
 }
 .text_margin_bottom {
   margin: 0 auto 2rem auto;
