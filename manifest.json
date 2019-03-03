@@ -6,8 +6,9 @@
   "icons": [{
         "src": "/pwa_test/img/pwa.png",
         "type": "image/png",
-        "sizes": "144x144"
+        "sizes": "192x192"
     }],
   "background_color": "#fff",
+  "theme_color": "#fff",
   "orientation": "portrait"
 }
