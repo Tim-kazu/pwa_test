@@ -1,5 +1,5 @@
-const CACHE_NAME = 'cache-v1';
-const urlsToCache = [
+var CACHE_NAME = 'cache-v1';
+var urlsToCache = [
   '/',
   'manifest.json',
   'style.min.css',
