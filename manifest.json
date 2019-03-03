@@ -2,5 +2,11 @@
   "short_name": "PWAサイト",
   "name": "サンプルのPWAサイト",
   "start_url": "https://tim-kazu.github.io/pwa_test/",
-  "display": "standalone"
+  "display": "standalone",
+  "background_color": "#fff",
+  "icons": [{
+        "src": "/pwa_test/img/icon.png",
+        "type": "image/png",
+        "sizes": "144x144"
+    }]
 }
