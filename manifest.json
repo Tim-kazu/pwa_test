@@ -1,0 +1,6 @@
+{
+  "short_name": "PWAサイト",
+  "name": "サンプルのPWAサイト",
+  "start_url": "https://tim-kazu.github.io/pwa_test/",
+  "display": "standalone",
+}
