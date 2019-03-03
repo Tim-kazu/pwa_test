@@ -1,6 +1,6 @@
 var CACHE_NAME = 'cash-v1';
 var urlsToCache = [
-  '/',
+  'index.html',
   'manifest.json',
   'style.min.css',
   '/img/pwa.png'
