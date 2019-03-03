@@ -10,6 +10,31 @@ body {
 img {
   width: 100%;
 }
+.common_header {
+  width: 100%;
+  background: #5a0fc8;
+}
+.common_header-inner {
+  padding: 2% 5%;
+  @media screen and (min-width: 678px){
+    padding: 20px 30px;
+  }
+}
+.common_footer {
+  width: 100%;
+  background: #5a0fc8;
+  p {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+  }
+}
+.common_footer-inner {
+  padding: 2% 5%;
+  @media screen and (min-width: 678px){
+    padding: 20px 30px;
+  }
+}
 .wraper {
   width: 95%;
   margin: 0 auto;
@@ -18,12 +43,17 @@ img {
   }
 }
 
-h1 {
+.main_img {
   text-align: center;
   max-width: 600px;
   margin: 2rem auto;
 }
-
+h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 1.8rem;
+  text-align: center;
+}
 h2 {
   border-bottom: double 5px #5a0fc8;
   padding: .6rem 0;
@@ -36,18 +66,41 @@ h2 {
 .section_link {
   color: #5a0fc8;
   text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
 }
 .section_box {
-  margin: 0 auto 2rem auto; 
+  margin: 0 auto 2rem auto;
+  @media screen and (min-width: 678px){
+    margin: 0 auto 4rem auto;
+  } 
 }
 
 .section_link-btn {
   background-color: #5a0fc8;
   display: block;
-  padding: 1rem;
-  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 1.6rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+  margin: 0 auto;
+  border-radius: 25px;
   width: 80%;
+  &:hover {
+    opacity: .6;
+  }
   @media screen and (min-width: 678px){
     width: 300px;
+  }
+}
+.section_list-item {
+  margin-bottom: 1rem;
+}
+.text_margin_bottom {
+  margin: 0 auto 2rem auto;
+  @media screen and (min-width: 678px){
+    margin: 0 auto 4rem auto;
   }
 }
