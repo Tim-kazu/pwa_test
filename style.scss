@@ -45,8 +45,12 @@ img {
 
 .main_img {
   text-align: center;
-  max-width: 600px;
+  width: 60%;
   margin: 2rem auto;
+  @media screen and (min-width: 678px){
+    max-width: 400px;
+    margin: 4rem auto;
+  }
 }
 h1 {
   color: #fff;
@@ -56,11 +60,13 @@ h1 {
 }
 h2 {
   border-bottom: double 5px #5a0fc8;
+  color: #3d3d3d;
   padding: .6rem 0;
 }
 
 .content {
   padding: 0 5%;
+  margin: 0 auto 8rem auto;
 }
 
 .section_link {
