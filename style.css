@@ -113,6 +113,13 @@ h2 {
   }
 }
 
+@media screen and (min-width: 678px) {
+  .section_col {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .section_link-btn {
   background-color: #5a0fc8;
   display: block;
@@ -179,7 +186,7 @@ h2 {
 
 @media screen and (min-width: 678px) {
   .section_img {
-    max-width: 640px;
+    max-width: 340px;
     margin: 4rem auto;
   }
 }
