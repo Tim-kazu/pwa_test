@@ -117,6 +117,7 @@ h2 {
   .section_col {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
