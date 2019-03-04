@@ -64,10 +64,14 @@
               <ul class="section_list">
                 <li class="section_list-item">オフラインで動く</li>
                 <li class="section_list-item">読み込みが速い</li>
+                <li class="section_list-item">Google推奨技術</li>
+                <li class="section_list-item">通常のWEBサイトと同じアクセスで利用</li>
+                <li class="section_list-item">OSに依存しない</li>
+                <li class="section_list-item">トップレベルでの画面表示（ブラウザのメニューバー非表示）</li>
                 <li class="section_list-item">常に最新の状態に保たれる</li>
                 <li class="section_list-item">ネイティブアプリのようなUI</li>
                 <li class="section_list-item">GPSを使った現在地取得と利用</li>
-                <li class="section_list-item">読み込みが速い</li>
+                <li class="section_list-item">カメラ・マイクへのアクセスが可能</li>
                 <li class="section_list-item">アプリストアを介さない為、アプリ提供に審査を必要としない</li>
                 <li class="section_list-item">インストール無しでアプリアイコンをホーム画面に設置</li>
               </ul>
@@ -106,7 +110,19 @@
           <h2>PWAの仕組み</h2>
           <div class="section_box">
             <p class="section_text">
-              PWAは通信環境が良くないケース、特に外出時のアクセスが想定される場合に有効ではないかと考えられる。ただし、大規模開発でPWAを組み込むには工数がかかる為、ウォーターフォール式に開発するのには不向きではないかと思われる。
+             PWAを利用するに当たって、ネイティブアプリ開発に必要なスキルが必要なわけではありません。
+             以下の項目を満たすことでPWAの機能を実装することができます。
+            </p>
+            <ul class="section_list">
+              <li class="section_list-item">マニフェストファイルの準備</li>
+              <li class="section_list-item">Service Workerの利用</li>
+              <li class="section_list-item">HTTPS対応</li>
+            </ul>
+            <p class="section_text">
+              マニフェストファイルにはアプリに必要な要件を設定します。JSON形式で記述し、利用するHTMLファイルに読み込ませる必要があります。
+              Service Workerはサーバーとアプリ間のリクエスト制御する仕組みでJavaScriptで構築されています。コンテンツ利用前から必要な
+              ファイルを読み込み、キャッシュさせることができる為、オフラインでの動作を可能にします。
+              最後にPWAを利用する上で必須条件となるのがHTTPS対応です。HTTPで取得されるコンテンツはブロックされてしまいます。
             </p>
           </div>
         </section>
