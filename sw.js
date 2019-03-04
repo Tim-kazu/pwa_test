@@ -3,7 +3,9 @@ var urlsToCache = [
   './',
   'manifest.json',
   'style.min.css',
-  '/pwa_test/img/pwa.png'
+  '/pwa_test/img/pwa.png',
+  '/pwa_test/img/add-to-home-screen.gif',
+  'https://www.youtube.com/embed/xF6mjl-wOqU'
 ];
 //Install
 self.addEventListener('install', function(event) {

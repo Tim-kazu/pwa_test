@@ -46,20 +46,43 @@
       <div class="main_img"><img src="/pwa_test/img/pwa.png" alt="PWA"></div>
       <div class="content">
         <section>
-          <h2>PWAのメリット</h2>
+          <h2>PWAのとは</h2>
           <div class="section_box">
-            <ul class="section_list">
-              <li class="section_list-item">オフラインで動く</li>
-              <li class="section_list-item">読み込みが速い</li>
-              <li class="section_list-item">ネイティブアプリのようなUI</li>
-              <li class="section_list-item">GPSを使った現在地取得と利用</li>
-            </ul>
+            <p class="section_text">PWAは「Progressive Web Apps」の略称でAMPと二項対立で語られることが多いです。
+              PWAの主な特徴はWEBページ, WEBアプリケーションとネイティブアプリの利点をいいとこ取りできる仕組みにあります。
+              WEB主軸で語るとトップレベルでの全画面表示、ホームアイコンの設置、プッシュ通知などこれまでネイティブアプリでしか実装出来なかったことが可能になります。</p>
+              <div class="section_movie"><iframe width="560" height="315" src="https://www.youtube.com/embed/xF6mjl-wOqU" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
           </div>
         </section>
         <section>
-          <h2>対応状況</h2>
+          <h2>PWAのメリット</h2>
           <div class="section_box">
-            <p class="section_text text_margin_bottom">現状ブラウザ対応はChromeでサポートが充実しているが、その他では部分的なサポートまでであったりする。。。</p>
+            <p class="section_text">PWAには以下のように開発者、エンドユーザーにとって多くのメリットを提供します。</p>
+            <ul class="section_list">
+              <li class="section_list-item">オフラインで動く</li>
+              <li class="section_list-item">読み込みが速い</li>
+              <li class="section_list-item">常に最新の状態に保たれる</li>
+              <li class="section_list-item">ネイティブアプリのようなUI</li>
+              <li class="section_list-item">GPSを使った現在地取得と利用</li>
+              <li class="section_list-item">読み込みが速い</li>
+              <li class="section_list-item">アプリストアを介さない為、アプリ提供に審査を必要としない</li>
+              <li class="section_list-item">インストール無しでアプリアイコンをホーム画面に設置</li>
+            </ul>
+            <div class="section_img">
+              <img src="/pwa_test/img/add-to-home-screen" alt="The Business Case for Progressive Web Apps">
+              <p class="section_text">Quotation: <a class="section_link"
+                  href="https://cloudfour.com/thinks/the-business-case-for-progressive-web-apps/">The Business Case for Progressive
+                  Web Apps</a></p>
+            </div>
+            
+          </div>
+        </section>
+        <section>
+          <h2>ブラウザの対応状況</h2>
+          <div class="section_box">
+            <p class="section_text text_margin_bottom">現状ブラウザ対応はChromeでサポートが充実しているが、その他では部分的なサポートまでであったりする。。。<br>
+              Safariでは未だプッシュ通知が利用できないなど未対応の機能もあるがService Workerが提供されたりと徐々にインフラが整ってきている印象。(2019/03/05時点)</p>
             <a class="section_link section_link-btn" href="https://caniuse.com/#search=PWA">対応状況はこちら</a>
           </div>
         </section>
@@ -74,6 +97,14 @@
               <li class="section_list-item"><a class="section_link" href="https://retty.news/">Retty グルメニュース</a></li>
               <li class="section_list-item"><a class="section_link" href="https://www.nikkei.com/">日本経済新聞</a></li>
             </ul>
+          </div>
+        </section>
+        <section>
+          <h2>PWAの仕組み</h2>
+          <div class="section_box">
+            <p class="section_text">
+              PWAは通信環境が良くないケース、特に外出時のアクセスが想定される場合に有効ではないかと考えられる。ただし、大規模開発でPWAを組み込むには工数がかかる為、ウォーターフォール式に開発するのには不向きではないかと思われる。
+            </p>
           </div>
         </section>
         <section>
