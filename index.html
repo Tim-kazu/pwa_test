@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,34 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <link rel="stylesheet" href="style.min.css">
   <title>PWAサンプルサイト</title>
+  <script>
+    window.addEventListener('load', function () {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register("sw.js")
+          .then(function (registration) {
+            return registration.pushManager.getSubscription().then(function (subscription) {
+              if (subscription) {
+                return subscription
+              }
+              return registration.pushManager.subscribe({
+                userVisibleOnly: true
+              })
+            })
+          }).then(function (subscription) {
+            console.log("pushManager endpoint:", subscription.endpoint)
+          }).catch(function (error) {
+            console.warn("serviceWorker error:", error)
+          })
+      }
+    });
+  </script>
 </head>
+
 <body>
   <header class="common_header">
-    <div class="common_header-inner"><h1>PWA Sample</h1></div>
+    <div class="common_header-inner">
+      <h1>PWA Sample</h1>
+    </div>
   </header>
   <div class="wraper">
     <main>
@@ -39,7 +64,9 @@
         <section>
           <h2>導入事例</h2>
           <div class="section_box">
-            <p class="section_text">日本での成功事例として良く挙げられているのが不動産情報サイトを運営する<a class="section_link" href="https://developers.google.com/web/showcase/2016/pdfs/suumo.pdf">SUUMO</a>での事例。読み込み速度を75%減少することに成功し、プッシュ通知の開封率も31%と好成績を叩き出しています。</p>
+            <p class="section_text">日本での成功事例として良く挙げられているのが不動産情報サイトを運営する<a class="section_link"
+                href="https://developers.google.com/web/showcase/2016/pdfs/suumo.pdf">SUUMO</a>での事例。読み込み速度を75%減少することに成功し、プッシュ通知の開封率も31%と好成績を叩き出しています。
+            </p>
             <ul class="section_list">
               <li class="section_list-item"><a class="section_link" href="https://suumo.jp/sp/">SUUMO</a></li>
               <li class="section_list-item"><a class="section_link" href="https://retty.news/">Retty グルメニュース</a></li>
@@ -50,23 +77,28 @@
         <section>
           <h2>まとめ</h2>
           <div class="section_box">
-            <p class="section_text">PWAは通信環境が良くないケース、特に外出時のアクセスが想定される場合に有効ではないかと考えられる。ただし、大規模開発でPWAを組み込むには工数がかかる為、ウォーターフォール式に開発するのには不向きではないかと思われる。</p>
+            <p class="section_text">
+              PWAは通信環境が良くないケース、特に外出時のアクセスが想定される場合に有効ではないかと考えられる。ただし、大規模開発でPWAを組み込むには工数がかかる為、ウォーターフォール式に開発するのには不向きではないかと思われる。
+            </p>
           </div>
         </section>
       </div>
     </main>
   </div>
-  
+
   <footer class="common_footer">
-    <div class="common_footer-inner"><p><span>© Tim All Rights Reserved.</span></p></div>
+    <div class="common_footer-inner">
+      <p><span>© Tim All Rights Reserved.</span></p>
+    </div>
   </footer>
-  
+
   <script>
-    navigator.serviceWorker.register('sw.js').then(function() {
+    navigator.serviceWorker.register('sw.js').then(function () {
       console.log('サービスワーカーの登録成功');
-    }).catch(function(err) {
+    }).catch(function (err) {
       console.log('サービスワーカーの登録ができませんでした：', err);
     });
   </script>
 </body>
+
 </html>
