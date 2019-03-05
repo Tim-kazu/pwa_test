@@ -9,7 +9,7 @@
         "sizes": "192x192"
     }],
   "background_color": "#fff",
-  "theme_color": "#fff",
+  "theme_color": "#5a0fc8",
   "orientation": "portrait",
   "gcm_sender_id": "1082690329288"
 }
